@@ -140,6 +140,8 @@
     }
     return value.split("").replace(/([A-Z])/g, "$1\u0305");
   };
+  
+  if (typeof $ !== 'undefined') $.ajaxSetup({ async: false });
 
   this.JSON = {
     "parse": function() {
